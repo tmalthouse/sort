@@ -5,7 +5,7 @@
 #include <string.h>
 #include <assert.h>
 
-void quicksort (int64_t *array, uint64_t len) {
+void quicksort (int64_t *array, uint64_t len) {//This is a "dutch-flag style" quicksort (en.wikipedia.org/wiki/Dutch_national_flag_problem)
   if (len<=1) return;
   int64_t pivot = array[rand()%len];
   uint64_t lcount = 0, ecount = 0, gcount = 0;
